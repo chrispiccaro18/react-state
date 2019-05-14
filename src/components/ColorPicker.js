@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import ColorDisplay from './ColorDisplay';
+import style from '../index.css';
 
 export default class ColorPicker extends PureComponent {
   static propTypes = {
@@ -7,16 +9,16 @@ export default class ColorPicker extends PureComponent {
   }
 
   state = {
-    color: 'white'
+    divColor: 'white'
   }
 
-  clickHandler = () => {
-
+  clickHandler = (event) => {
+    this.setState({ divColor: event.target.textContent.toLowerCase() });
   }
 
   render() {
     const colorButtons = this.props.colors.map(color => {
-      return <button key={color} onClick={this.clickHandler} className={color}>{color.toUpperCase()}</button>;
+      return <button key={color} onClick={this.clickHandler} className={style[color]}>{color.toUpperCase()}</button>;
     });
     return (
       <>
