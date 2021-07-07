@@ -1,0 +1,27 @@
+div {
+  height: 300px;
+  width: 300px;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.orange {
+  background-color: orange;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.pink {
+  background-color: pink;
+}
+.duplicate {
+  background-image: url('https://i.dailymail.co.uk/i/pix/2016/03/18/15/324D202500000578-3498922-image-a-33_1458315465874.jpg');
+  background-size: contain;
+}
