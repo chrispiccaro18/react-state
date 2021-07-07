@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorPicker component renders a ColorPicker 1`] = `
+Array [
+  <button
+    className="red"
+    key="red"
+    onClick={[MockFunction]}
+  >
+    RED
+  </button>,
+  <button
+    className="yellow"
+    key="yellow"
+    onClick={[MockFunction]}
+  >
+    YELLOW
+  </button>,
+  <button
+    className="blue"
+    key="blue"
+    onClick={[MockFunction]}
+  >
+    BLUE
+  </button>,
+]
+`;
